@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory>
+        <EditTextPreference
+            android:defaultValue="129.74.161.212"
+            android:key="pref_server"
+            android:title="Server" />
+        <EditTextPreference
+            android:defaultValue="80"
+            android:key="pref_port"
+            android:title="Port" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="prefEnableWifi"
+            android:summary="@string/pref_enable_summary"
+            android:title="@string/pref_enable" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="pref_enableCell"
+            android:summary="@string/pref_enable_cell_summary"
+            android:title="@string/pref_enableCell" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_wifi_roam"
+            android:summary="@string/pref_wifi_roam_summary"
+            android:title="@string/pref_wifi_roam" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="pref_cell_roam"
+            android:summary="@string/pref_cell_roam_summary"
+            android:title="@string/pref_cell_roam" />
+
+        <edu.nd.fmnc.SliderPreference
+            android:dialogMessage="Choose interval for reporting"
+            android:dialogTitle="Interval"
+            android:key="pref_interval"
+            android:negativeButtonText="Cancel"
+            android:positiveButtonText="Ok"
+            android:summary="Reporting interval"
+            android:title="Interval" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
